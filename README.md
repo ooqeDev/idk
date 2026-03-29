@@ -14,4 +14,4 @@
 
 **Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece (Reference to the image below). While it is grounded, press the RST button on the board, it should restart and the Pico should show up as a media device containing the PAYLOAD.TXT file. Open up the file using your preferred text editor and type in your payload (DuckyScript is not supported as of now). The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved. Take out the wire between PIN 15 and the payload will execute on boot everytime it is plugged into a device.**
 
-![Pico](img_0125.jpeg)
+![Pico](IMG_0125.jpeg)
