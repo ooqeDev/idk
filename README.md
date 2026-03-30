@@ -4,13 +4,13 @@
   <strong>A USB HID keystroke injector for the Raspberry Pi Pico. Plug it in and it types a stored payload automatically. Edit the payload over USB without reflashing.</strong>
 </div>
 
-# How to get started
+# Getting started
 
 1. Download the latest .UF2 release from the release page.
 2. Plug in the Pico whilst holding the Boot button, it will show up as a removable media device named RPI-RP2.
 3. Copy over the .UF2 file you downloaded to the root of the Pico, it should restart and the firmware should be installed!
 
-# How to edit the payload?
+# Editing the payload
 
 - Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece (Reference to the image below).
 - While it is grounded, press the RST button on the board, it should restart and the Pico should show up as a media device containing the PAYLOAD.TXT file.
@@ -20,7 +20,7 @@
 
 ![Pico](IMG_0125.jpeg)
 
-# How to build?
+# Building
 
 **Requirements**
 - CMake & Make
