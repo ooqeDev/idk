@@ -12,10 +12,10 @@
 
 # Editing the payload
 
-- Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece (Reference to the image below).
-- While it is grounded, press the RST button on the board, it should restart and the Pico should show up as a media device containing the PAYLOAD.TXT file.
+- Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece, this stops all code execution and puts you in safe mode (Refer to the image below).
+- While it is grounded, press the RST button on the board, the board will restart and the Pico should show up as a media device containing the PAYLOAD.TXT file.
 -  Open up the file using your preferred text editor and type in your payload (DuckyScript is not supported as of now).
-- The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved.
+- The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved properly.
 - Take out the wire between PIN 15 and the payload will execute on boot everytime it is plugged into a device.
 
 ![Pico](IMG_0125.jpeg)
@@ -42,3 +42,9 @@ make -j4
 ```
 
 **A bunch of files should have been generated in the build folder, the only one you should really be needing is the .UF2 as that is the main firmware used in the Pico.**
+
+# Support / Issue
+
+- Feel free to open an issue if you find one, it will be greated appreciated!
+- Any Pull requests would be really helpful as i'm still new to C and I would know where to improve onto.
+- If urgent, Discord: ooqe__
