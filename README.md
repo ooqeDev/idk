@@ -27,7 +27,9 @@
 - GCC (arm-none-eabi)
 - Pico-SDK
 
-Pico-SDK is already located in /lib but if you want to download yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)! (Don't forget to change the PICO_SDK_PATH to your own path)
+Pico-SDK is already located in /lib but if you want to do it yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)! (Don't forget to change the PICO_SDK_PATH to your own path)
+
+**Once your ready, type this in terminal:**
 
 ```bash
 git clone https://github.com/ooqeDev/BadPICo
@@ -39,4 +41,4 @@ cmake ..
 make -j4
 ```
 
-
+**A bunch of files should have been generated in the build folder, the only one you should really be needing is the .UF2 as that is the main firmware used in the Pico.**
