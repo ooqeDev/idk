@@ -12,7 +12,11 @@
 
 # How to edit the payload?
 
-**Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece (Reference to the image below). While it is grounded, press the RST button on the board, it should restart and the Pico should show up as a media device containing the PAYLOAD.TXT file. Open up the file using your preferred text editor and type in your payload (DuckyScript is not supported as of now). The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved. Take out the wire between PIN 15 and the payload will execute on boot everytime it is plugged into a device.**
+- Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece (Reference to the image below).
+- While it is grounded, press the RST button on the board, it should restart and the Pico should show up as a media device containing the PAYLOAD.TXT file.
+-  Open up the file using your preferred text editor and type in your payload (DuckyScript is not supported as of now).
+- The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved.
+- Take out the wire between PIN 15 and the payload will execute on boot everytime it is plugged into a device.
 
 ![Pico](IMG_0125.jpeg)
 
@@ -23,7 +27,7 @@
 - GCC (arm-none-eabi)
 - Pico-SDK
 
-Pico-SDK is already located in /lib but if you want to download yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)!
+Pico-SDK is already located in /lib but if you want to download yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)! (Don't forget to change the PICO_SDK_PATH to your own path)
 
 ```bash
 git clone https://github.com/ooqeDev/BadPICo
