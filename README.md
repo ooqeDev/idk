@@ -1,35 +1,37 @@
 <h1 align="center">BadPiCo</h1>
 
 <div align="center">
-  <strong>A BadUSB for the Raspberry Pi Pico. Coded as a firmware using C for pure efficiency and a lot faster compared to traditional Pico Duckies</strong>
+  <strong>A BadUSB for the Raspberry Pi Pico. Coded as a firmware using C for pure efficiency and a lot faster compared to traditional Pico Duckies.</strong>
 </div>
 
 # Getting started
 
-1. Download the latest .UF2 release from the release page.
+1. Download the latest .UF2 release from the [release](https://github.com/ooqeDev/BadPiCo/releases) page.
 2. Plug in the Pico whilst holding the Boot button, it will show up as a removable media device named RPI-RP2.
 3. Copy over the .UF2 file you downloaded to the root of the Pico, it should restart and the firmware should be installed!
 
 # Editing the payload
 
-- Ground the PIN 15 on the Pico using a jumper wire or some kind of metal piece, this stops all code execution and puts you in safe mode (Refer to the image below).
-- While it is grounded, press the RST button on the board, the board will restart and the Pico should show up as a media device containing the PAYLOAD.TXT file.
--  Open up the file using your preferred text editor and type in your payload (DuckyScript is not supported as of now).
-- The Blue LED on the board should flash 3 times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved properly.
-- Take out the wire between PIN 15 and the payload will execute on boot everytime it is plugged into a device.
+- Ground **PIN 15** on the Pico using a jumper wire or some kind of metal piece, this stops all code execution and puts you in **Safe Mode**.
+- While it is grounded, press the **RST** button on the board, the board will restart and the Pico will show up as a drive containing the PAYLOAD.TXT file.
+- Open up the file using your preferred text editor and type in your payload
+  - Note: DuckyScript is **not** supported as of now.
+- The Blue LED on the board should flash **3 ** times once you hit save on your editor, make sure it flashes otherwise the payload might not have been saved properly.
+- Take out the wire from **PIN 15** and the payload will execute on boot everytime it is plugged into a device.
 
 ![Pico](IMG_0125.jpeg)
 
 # Building
 
 **Requirements**
+- Git
 - CMake & Make
 - GCC (arm-none-eabi)
 - Pico-SDK
 
 Pico-SDK is already located in /lib but if you want to do it yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)! (Don't forget to change the PICO_SDK_PATH to your own path)
 
-**Once your ready, type this in terminal:**
+**Build Steps:**
 
 ```bash
 git clone https://github.com/ooqeDev/BadPICo
@@ -43,8 +45,7 @@ make -j4
 
 **A bunch of files should have been generated in the build folder, the only one you should really be needing is the .UF2 as that is the main firmware used in the Pico.**
 
-# Support / Issue
+# Issues / Support
 
-- Feel free to open an issue if you find one, it will be greated appreciated!
-- Any Pull requests would be really helpful as i'm still new to C and I would know where to improve onto.
-- If urgent, Discord: ooqe__
+- Feel free to open an [issue](https://github.com/ooqeDev/BadPiCo/issues) if you come across a bug or have questions!
+- [Pull requests](https://github.com/ooqeDev/BadPiCo/pulls) are welcome and would be really appreciated, any contributions help improve the project.
