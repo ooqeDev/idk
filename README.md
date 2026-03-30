@@ -1,7 +1,7 @@
 <h1 align="center">BadPiCo</h1>
 
 <div align="center">
-  <strong>A USB HID keystroke injector for the Raspberry Pi Pico. Plug it in and it types a stored payload automatically. Edit the payload over USB without reflashing.</strong>
+  <strong>A BadUSB for the Raspberry Pi Pico. Coded as a firmware using C for pure efficiency and a lot faster compared to traditional Pico Duckies</strong>
 </div>
 
 # Getting started
