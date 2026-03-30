@@ -13,7 +13,7 @@
 # Editing the payload
 
 - Ground **PIN 15** on the Pico using a jumper wire or some kind of metal piece, this stops all code execution and puts you in **Safe Mode**.
-- While it is grounded, press the **RST** button on the board, the board will restart and the Pico will show up as a drive containing the PAYLOAD.TXT file.
+- While it is grounded, press the **RST** button on the board, the board will restart and the Pico will show up as a drive containing the **PAYLOAD.TXT** file.
 - Open up the file using your preferred text editor and type in your **Payload.**
   - Note: DuckyScript is **not** supported as of now.
 - The Blue LED on the board should flash **3** times once you hit save on your editor, make **sure** it flashes otherwise the payload might not have been saved properly.
