@@ -18,12 +18,21 @@
 
 # How to build?
 
-`git clone https://github.com/ooqeDev/BadPICo
+**Requirements**
+- CMake & Make
+- GCC (arm-none-eabi)
+- Pico-SDK
+
+Pico-SDK is already located in /lib but if you want to download yourself, check out their [repo](https://github.com/raspberrypi/pico-sdk)!
+
+```bash
+git clone https://github.com/ooqeDev/BadPICo
 cd BadPiCo
 export PICO_SDK_PATH=/lib/pico-sdk
 mkdir build
 cd build
 cmake ..
-make -j4`
+make -j4
+```
 
 
